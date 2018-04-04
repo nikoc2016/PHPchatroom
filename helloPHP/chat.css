@@ -1,0 +1,13 @@
+.panel-default > .panel-custom {
+    background: #696969;
+    color:#FFFFFF;
+}
+
+.mainBackground{
+    background-color:#BBB;
+}
+
+.centerAlign{
+    text-align: center;
+    padding-top:10px;
+}

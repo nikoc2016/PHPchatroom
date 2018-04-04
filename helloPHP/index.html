@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HelloPHP - My first PHP app.</title>
+  <link href="3JS/bootstrap.min.css" rel="stylesheet">
+  <link href="chat.css" rel="stylesheet">
+</head>
+
+<body class="mainBackground">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">HelloPHP - 我的第一个PHP程式</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+        <ul class="nav navbar-nav">
+          <li id="btn_public" class="active"><a href="#" onclick="return false;">Public</a></li>
+          <li id="btn_private"><a href="#" onclick="return false;">Private</a></li>
+          <li><a href="https://nikoc2016.github.io/Project3/index.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="chatPanel" class="panel panel-primary">
+    <div id="chatPanelHeading" class="panel-heading">公共频道 / Public Chat</div>
+    <div id="chatPanelContent" class="panel-body">
+      <textarea id="display" class="form-control" rows="15" readonly></textarea>
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon"> Reply</br>回复 </span>
+          <input type="text" class="form-control" id="alias" placeholder="昵称/Alias">
+          <textarea class="form-control" rows="5" id="comment" placeholder="回复内容/Content"></textarea>
+        </div>
+      <form>
+      <div class="centerAlign">
+        <button id="sendBtn" type="button" class="btn btn-primary btn-md">发送/Send</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<foot>
+  <script src="3JS/jquery.min.js"></script>
+  <script src="3JS/bootstrap.min.js"></script>
+  <script src="chat.js?V1.0.0.3"></script>
+</foot>
+</html>
